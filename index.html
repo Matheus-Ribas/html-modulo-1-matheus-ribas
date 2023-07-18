@@ -4,59 +4,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>Primeira Página em HTML</title>
 </head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+<body bgcolor="#86baa8">
+    <h1 style="color: rgb(18, 109, 48)"> <font face="Cera Pro">Um HTML ensinando a escrever um HTML</font></h1>
     <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <h2 id="inicio">Índice</h2>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#tags">O que são tags HTML?</a></li>
+        <li><a href="#estrutura">Estrutura básica de um HTML</a></li>
+        <li><a href="#tags-texto">Tags modificadoras de texto</a></li>
+        <li><a href="#estrutura-texto"> Estrutura de textos em HTML</a></li>
+        <li><a href="#imagens">Anexar imagens e links</a></li>
+        <li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
+        <li><a href="#refs">Referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="tags">O que são tags HTML?</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Resumidamente, todas as páginas da web são estruturadas em HTML, por isso o título desta página. Para que
+      o navegador interprete as informações da página, estas devem estar formatadas de uma forma específica, e 
+      esta forma é atingida por meio das tags. Elas possuem uma estrutura similar a isto:
+      <br>
+      <br>
+      <img src="imagens/tagExemplo.jpg" width="160"/>
+      <br>
+      <br>
+      Dependendo do tipo de tag, algumas precisam de um fechamento (exemplo de cima) e outras são completas
+      por si mesmas (exemplo de baixo). Resumidamente, são uma formatação das informações contidas em um
+      arquivo HTML.
+    </p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="estrutura">Estrutura básica de um HTML</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Existem tags fundamentais para a formação de uma página: html, head, title e body. A seguir, a forma
+      de sua estruturação e explicações.
+      <br>
+      <br>
+      <img src="imagens/estrutura.jpg" width="340"/>
+      <br>
+    </p>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+      <li><strong>HTML</strong>: indica o que o navegador deve interpretar; representa o que de fato é HTML naquele arquivo.</li>
+      <li><strong>Head</strong>: marca o título do site, e dentro dele está a tag <strong>Title</strong>, onde 
+         se digita propriamente o título que aparecerá na aba do navegador.
+      </li>
+      <li><strong>Body</strong>: como o próprio nome indica, é o corpo principal do site, o que irá aparecer para o usuário quando
+         este entra na página.
+      </li>
+
     </ul>
 
+    <h2 id="tags-texto">Tags modificadoras de texto</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Os textos inseridos em uma página também podem ser modificados. A seguir, explicações e exemplos.</p>
+    <ul>
+      <li><strong>Negrito</strong>: utiliza-se a tag <strong>strong</strong>. Resultado:  
+         <strong>TEXTO EM NEGRITO</strong></li>
+      <li><strong>Itálico</strong>: utiliza-se a tag <i>i</i>. Resultado:
+         <i>TEXTO EM ITÁLICO</i> </li>
+      <li><strong>Sublinhado</strong>: utiliza-se a tag <u>u</u>. Resultado:
+      <u>TEXTO SUBLINHADO</u></li>
+      <li><strong>Grifado</strong>: utiliza-se a tag <mark>mark</mark>. Resultado:
+      <mark>TEXTO GRIFADO</mark></li>
+      <li><strong>Texto riscado</strong>: utiliza-se a tag <strong>del</strong>. Resultado: <del>TEXTO 
+         RISCADO</del></li>
+      <li><strong>Levantado ("exponencial")</strong>: utiliza-se a tag <sup>sup</sup>. Resultado:
+         <sup>Texto levantado</sup></li>
+      <li><strong>Baixo ("elemento químico")</strong>: utiliza-se a tag <sub>sub</sub>. Resultado:
+         <sub>Texto baixado</sub></li>
+      <li><strong>Mudar fonte</strong>: utiliza-se a tag <strong>font</strong> e indica-se qual fonte
+      é utilizada. Resultado (exemplo): <font face="Comic Sans MS">Texto em Comic Sans MS</font></li>
+
+   <p>Também é possível fazer um texto com mais de um destes atributos. Para isto, basta colocar múltiplas tags
+       em um mesmo bloco de texto (desde que estejam estruturadas corretamente).
+   </p>
+
+      <h2>"Os seis H's"</h2>
+      <p>Para inserir um título dentro da página, utiliza-se a tag <strong>h</strong>, que pode variar de 
+         <strong>h1</strong> até <strong>h6</strong>. Neste
+         caso, h1 representa o maior título e h6 representa o menor título dentre estes seis.
+      </p>
+      <p>A seguir, exemplos dos seis H's.</p>
+
+      <h1> TÍTULO H1 </h1>
+      <h2> TÍTULO H2 </h2>
+      <h3> TÍTULO H3 </h3>
+      <h4> TÍTULO H4 </h4>
+      <h5> TÍTULO H5 </h5>
+      <h6> TÍTULO H6 </h6>
+
+   <h2 id="estrutura-texto">Estrutura de textos em HTML</h2>
+   <small><a href="#inicio">(Voltar)</a></small>
+   <p>Para criar um parágrafo, utiliza-se a tag <strong>p</strong>, e o resultado é uma caixa de texto similar
+   a esta que você está lendo.</p>
+   <p>A tag <strong>blockquote</strong> é usada para inserir um bloco de texto separado em forma de citação.
+      Exemplo:</p>
+      <blockquote>"Uma frase muito filosófica e instigante"</blockquote>
+   <p>As tags <strong>hr</strong> e <strong>br</strong> servem para, respectivamente, criar uma linha
+   separadora (como aquela no título desta página) e criar uma linha separadora em branco.</p>
+   <p><strong>Small</strong> é uma tag que cria uma espécie de subtítulo, como estes que você vê ao longo
+   desta página (aqui, eles exercem a função de retornar ao índice, mas não obrigatoriamente devem indicar um 
+   link).</p>
+   <p>Para abreviar algum nome, é utilizada a tag <strong>abbr</strong>, cuja estrutra básica é mostrada
+   a seguir, junto a um exemplo (nota: desta forma, apenas a abreviatura aparece para o usuário).</p>
+   <img src="imagens/abreviar.jpg" width="450"/>
+   <br>
+   <p><abbr title="Digital Inovation One">DIO</abbr> - Digital Inovation One</p>
+
+    <h2 id="imagens">Anexar imagens e links</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Para a inserção de imagens, a tag <strong>img</strong> é utilizada. A seguir, sua estrutura. A tag
+      <strong>width</strong> indica a largura da imagem. Apesar de não estar incluída no exemplo, também existe
+       a tag <strong>height</strong>, que indica a altura da imagem. Quando as duas são utilizadas, podem
+       distorcer a imagem se os valores formarem uma resolução diferente do arquivo original.
+   </p>
+    <img src="imagens/inserir-imagem.jpg" width="500"/>
+
+   <p>Para inserir um link, usa-se a estrutura a seguir. <strong>Target</strong> indica o "modo" em que o link 
+      será aberto. No caso, "_blank" indica que será aberto em uma nova aba. "_self" indica que o link será
+      aberto na mesma aba.
+   </p>
+   <img src="imagens/inserir-link.jpg" width="800"/>
+
+    <h2 id="listas">Listas ordenadas e não ordenadas</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Ambas possuem uma estrutura similar, e utilizam as tags <strong>ul</strong> (não ordenadas) e
+   <strong>ol</strong> (ordenadas) para definir o tipo de lista, e <strong>li</strong> para indicar cada
+   tópico. Os resultados, respectivamente, são algo como a seguir:</p>
+
+   <ul>
+      <li>Tópico A</li>
+      <li>Tópico B</li>
+      <li>Tópico C</li>
+   </ul>
+
+   <ol>
+      <li>Tópico D</li>
+      <li>Tópico E</li>
+      <li>Tópico F</li>
+   </ol>
+
+    <h2 id="refs">Referências</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <ul>
+      <br>
+        <li><a href="https://web.dio.me/track/primeiros-passos-em-tecnologia" target="_blank">Bootcamp
+         "Primeiros Passos em Tecnologia", da DIO.
+        </a></li>
+        <li><a href="https://www.w3schools.com/TAGS/default.asp" target="_blank"> W3Schools</a></li>
+    </ul>
+    <br>
+    <footer>
+      <p style="color: rgb(18, 109, 48)"> <font face="Cera Pro">Página elaborada por Matheus Nesi Ribas, durante o curso Primeiros Passos em Tecnologia, da Digital Inovation One.</font></p>
+    </footer>
 </body>
 </html>
